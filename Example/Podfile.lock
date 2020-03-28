@@ -1,0 +1,27 @@
+PODS:
+  - Nimble (7.3.4)
+  - Quick (1.2.0)
+  - ScryfallApiSwift (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0)
+  - Quick (~> 1.2.0)
+  - ScryfallApiSwift (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  ScryfallApiSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  ScryfallApiSwift: 15974ed0763c66258805d7c7b3a4866ff2bcb9b8
+
+PODFILE CHECKSUM: ce6a7c1546d1a6bea29d2d12be0fee02bbfa42f6
+
+COCOAPODS: 1.8.4

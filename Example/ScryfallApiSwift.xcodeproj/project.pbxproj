@@ -29,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0FF53858A926C5B832ABE5D1 /* Pods_ScryfallApiSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScryfallApiSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		366C93A4242EE9570006B364 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		3F6C9E6831EB58AACE2B0F75 /* Pods-ScryfallApiSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScryfallApiSwift_Example.debug.xcconfig"; path = "Target Support Files/Pods-ScryfallApiSwift_Example/Pods-ScryfallApiSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ScryfallApiSwift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScryfallApiSwift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,9 +44,9 @@
 		803116E396FCA53611DAB993 /* Pods-ScryfallApiSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScryfallApiSwift_Example.release.xcconfig"; path = "Target Support Files/Pods-ScryfallApiSwift_Example/Pods-ScryfallApiSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A09A430487B1365FFC4123B6 /* Pods-ScryfallApiSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScryfallApiSwift_Tests.release.xcconfig"; path = "Target Support Files/Pods-ScryfallApiSwift_Tests/Pods-ScryfallApiSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A178B798EF5F818F93530DA7 /* Pods_ScryfallApiSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScryfallApiSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A49E02A5D62DC7887C06A147 /* ScryfallApiSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ScryfallApiSwift.podspec; path = ../ScryfallApiSwift.podspec; sourceTree = "<group>"; };
-		D41BBDC03FCF36A023FB323F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		FA9CE79F9525A702CB243010 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A49E02A5D62DC7887C06A147 /* ScryfallApiSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ScryfallApiSwift.podspec; path = ../ScryfallApiSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D41BBDC03FCF36A023FB323F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FA9CE79F9525A702CB243010 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FB24905DF2B4E0D6F2B7F70F /* Pods-ScryfallApiSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScryfallApiSwift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ScryfallApiSwift_Tests/Pods-ScryfallApiSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +78,6 @@
 				FB24905DF2B4E0D6F2B7F70F /* Pods-ScryfallApiSwift_Tests.debug.xcconfig */,
 				A09A430487B1365FFC4123B6 /* Pods-ScryfallApiSwift_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,6 +144,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				366C93A4242EE9570006B364 /* Package.swift */,
 				A49E02A5D62DC7887C06A147 /* ScryfallApiSwift.podspec */,
 				D41BBDC03FCF36A023FB323F /* README.md */,
 				FA9CE79F9525A702CB243010 /* LICENSE */,
@@ -228,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -440,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -486,7 +488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
