@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/ScryfallApiSwift.svg?style=flat)](https://cocoapods.org/pods/ScryfallApiSwift)
 [![Platform](https://img.shields.io/cocoapods/p/ScryfallApiSwift.svg?style=flat)](https://cocoapods.org/pods/ScryfallApiSwift)
 
+A Swift wrapper for the Scryfall REST API.  Allows you to search for cards, sets, symbols, etc.  This API is not affiliated with Magic the Gathering or Scryfall in any way.  The purpose is to be able to get information about Magic Cards and Magic Sets.
+See https://scryfall.com/docs/api for the Scryfall REST API docs.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
