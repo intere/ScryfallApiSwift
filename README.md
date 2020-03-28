@@ -26,6 +26,20 @@ it, simply add the following line to your Podfile:
 pod 'ScryfallApiSwift'
 ```
 
+## Example Usage
+```swift
+import ScryfallApiSwift
+
+let task = ScryfallApi().randomCard { result in
+    switch result {
+    case .success(let card):
+        print("Got a random card: \(card.name)")
+    case .failure(let error):
+        print("There was an error: \(error.localizedDescription)")
+    }
+}
+```
+
 ## Author
 
 Eric Internicola, intere@gmail.com
