@@ -26,6 +26,7 @@ See https://scryfall.com/docs/api for the Scryfall REST API docs.
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'Sources/Classes/**/*'
+  s.swift_version = '5.0'
   
   # s.resource_bundles = {
   #   'ScryfallApiSwift' => ['ScryfallApiSwift/Assets/*.png']
