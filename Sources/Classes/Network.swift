@@ -34,7 +34,7 @@ public struct Resource<T: Decodable> {
             switch result {
             case .success(let result):
                 guard let result = result as? T else {
-                    return completion(.failure(URLRequestError.noData))
+                    return completion(.failure(URLRequestError.noData(self.url)))
                 }
                 completion(.success(result))
             case .failure(let error):
@@ -69,18 +69,18 @@ extension URLRequest {
 
             // 2. Ensure we got back an HTTPURLResponse (this should always succeed)
             guard let httpResponse = response as? HTTPURLResponse else {
-                return completion(.failure(URLRequestError.invalidResponseObject))
+                return completion(.failure(URLRequestError.invalidResponseObject(resource.url)))
             }
 
             // 3. Ensure we got back an HTTP 200 (OK) or fail with the status code
             guard httpResponse.statusCode == 200 else {
                 return completion(.failure(
-                    URLRequestError.invalidStatusCode(httpResponse.statusCode)))
+                    URLRequestError.invalidStatusCode(resource.url, httpResponse.statusCode)))
             }
 
             // 4. Ensure we got back data or fail
             guard let data = data else {
-                return completion(.failure(URLRequestError.noData))
+                return completion(.failure(URLRequestError.noData(resource.url)))
             }
 
             // 5. Finally, decode the data and hand it back
@@ -105,9 +105,9 @@ extension URLRequest {
 // MARK: - URLRequestError
 
 public enum URLRequestError: Error {
-    case invalidResponseObject
-    case invalidStatusCode(Int)
-    case noData
+    case invalidResponseObject(URL)
+    case invalidStatusCode(URL, Int)
+    case noData(URL)
 }
 
 // MARK: CancellableTask conformance
