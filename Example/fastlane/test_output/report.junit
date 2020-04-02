@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='ScryfallApiSwift_Tests.xctest' tests='3' failures='0'>
+  <testsuite name='ScryfallApiSwift_Tests.TableOfContentsSpec' tests='3' failures='0'>
+    <testcase classname='ScryfallApiSwift_Tests.TableOfContentsSpec' name='ScryfallApi__does_autocomplete' time='0.506'/>
+    <testcase classname='ScryfallApiSwift_Tests.TableOfContentsSpec' name='ScryfallApi__does_get_empty_result_on_1_character' time='0.502'/>
+    <testcase classname='ScryfallApiSwift_Tests.TableOfContentsSpec' name='ScryfallApi__does_fetch_a_random_card' time='1.502'/>
+  </testsuite>
+</testsuites>

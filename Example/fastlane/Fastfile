@@ -12,10 +12,13 @@ default_platform :ios
 
 platform :ios do
 
-#Running tests
+#Running tests on iPhone 8, and cleaning project folder before execution
   desc "Compiles the example code and runs the tests"
-  lane :run_tests do
-​    scan
+  lane :tests do
+	scan(workspace: "ScryfallApiSwift.xcworkspace",
+	     scheme: "ScryfallApiSwift-Example",
+	     clean: true, 
+	     device: 'iPhone 8')
   end
 
 #
