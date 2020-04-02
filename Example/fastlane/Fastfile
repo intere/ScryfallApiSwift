@@ -19,8 +19,12 @@ platform :ios do
 	     scheme: "ScryfallApiSwift-Example",
 	     clean: true, 
 	     device: 'iPhone 8')
-  end
+	end
 
-#
+#Performs Pod lib lint
+  desc "Performs a pod lib lint ScryfallApiSwift.podspec"
+  lane :run_pod do
+	pod_lib_lint(verbose: true)
+    end
 
 end

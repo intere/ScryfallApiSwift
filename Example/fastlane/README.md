@@ -35,6 +35,11 @@ xcode-select --install
 fastlane ios tests
 ```
 Compiles the example code and runs the tests
+### ios run_pod
+```
+fastlane ios run_pod
+```
+Performs a pod lib lint ScryfallApiSwift.podspec
 
 ----
 
