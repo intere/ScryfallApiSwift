@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites name='ScryfallApiSwift_Tests.xctest' tests='3' failures='1'>
   <testsuite name='ScryfallApiSwift_Tests.TableOfContentsSpec' tests='3' failures='1'>
-    <testcase classname='ScryfallApiSwift_Tests.TableOfContentsSpec' name='ScryfallApi__does_autocomplete' time='0.506'/>
+    <testcase classname='ScryfallApiSwift_Tests.TableOfContentsSpec' name='ScryfallApi__does_autocomplete' time='0.525'/>
     <testcase classname='ScryfallApiSwift_Tests.TableOfContentsSpec' name='ScryfallApi__does_get_empty_result_on_1_character' time='0.502'/>
     <testcase classname='ScryfallApiSwift_Tests.TableOfContentsSpec' name='ScryfallApi__does_fetch_a_random_card'>
       <failure message='-waitUntil() timed out but was unable to run the timeout handler because the main thread is unresponsive (0.5 seconds is allow after the wait times out). Conditions that may cause this include processing blocking IO on the main thread, calls to sleep(), deadlocks, and synchronous IPC. Nimble forcefully stopped run loop which may cause future failures in test run.'>Example/Tests/Tests.swift:13</failure>
