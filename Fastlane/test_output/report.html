@@ -112,6 +112,8 @@
         <section id="counters">
           <h2 id="test-count"><span class="number">3</span> tests</h2>
           
+            <h2 id="fail-count"><span class="number">1</span> failures</h2>
+          
         </section>
         <section id="segment-bar">
           <a id="all-segment" onclick="selectSegment(this);" class="selected">All</a><a id="failing-segment" onclick="selectSegment(this);">Failing</a><a id="passing-segment" onclick="selectSegment(this);">Passing</a>
@@ -121,7 +123,7 @@
     <section id="test-suites">
       
         
-        <section class="test-suite passing" id="ScryfallApiSwift_Tests.TableOfContentsSpec">
+        <section class="test-suite failing" id="ScryfallApiSwift_Tests.TableOfContentsSpec">
           <section class="heading" onclick="toggleTests(this);">
             <h3 class="title">ScryfallApiSwift_Tests.TableOfContentsSpec</h3>
           </section>
@@ -132,7 +134,7 @@
               <tr class="test passing "  onclick="toggleDetails('ScryfallApi__does_autocomplete');">
                 <td>
                   
-                    <h3 class="time">0.505s</h3>
+                    <h3 class="time">0.520s</h3>
                   
                 </td>
                 <td><h3 class="title">ScryfallApi__does_autocomplete</h3></td>
@@ -143,7 +145,7 @@
               <tr class="test passing odd"  onclick="toggleDetails('ScryfallApi__does_get_empty_result_on_1_character');">
                 <td>
                   
-                    <h3 class="time">0.501s</h3>
+                    <h3 class="time">0.502s</h3>
                   
                 </td>
                 <td><h3 class="title">ScryfallApi__does_get_empty_result_on_1_character</h3></td>
@@ -151,14 +153,29 @@
               
             
               
-              <tr class="test passing "  onclick="toggleDetails('ScryfallApi__does_fetch_a_random_card');">
+              <tr class="test failing "  onclick="toggleDetails('ScryfallApi__does_fetch_a_random_card');">
                 <td>
-                  
-                    <h3 class="time">1.501s</h3>
                   
                 </td>
                 <td><h3 class="title">ScryfallApi__does_fetch_a_random_card</h3></td>
               </tr>
+              
+                <tr class="details failing ScryfallApi__does_fetch_a_random_card">
+                  <td></td>
+                  <td>
+                    
+                      <section class="test-detail reason">-waitUntil() timed out but was unable to run the timeout handler because the main thread is unresponsive (0.5 seconds is allow after the wait times out). Conditions that may cause this include processing blocking IO on the main thread, calls to sleep(), deadlocks, and synchronous IPC. Nimble forcefully stopped run loop which may cause future failures in test run.</section>
+                    
+                    
+                      <section class="test-detail snippet">            <span class="kd">func</span> <span class="nf">waitForFetch</span><span class="p">()</span> <span class="p">{</span>
+                <span class="n">waitUntil</span> <span class="p">{</span> <span class="n">done</span> <span class="k">in</span>
+                    <span class="k">repeat</span> <span class="p">{</span>
+</section>
+                      <section class="test-detail">/Users/gracenjoroge/Documents/dev/ScryfallApiSwift/Example/Tests/Tests.swift:13</section>
+                    
+                    
+                  </td>
+                </tr>
               
             
             </table>

@@ -16,6 +16,7 @@ platform :ios do
   desc "Compiles the example code and runs the tests"
   lane :tests do
 	scan(workspace: "Example/ScryfallApiSwift.xcworkspace",
+	     scheme: "ScryfallApiSwift-Example",
 	     clean: true, 
 	     device: 'iPhone 8')
 	end
