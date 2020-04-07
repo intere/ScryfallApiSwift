@@ -5,17 +5,17 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.001829">
+      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.001874">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.001958">
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.001497">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: pod_lib_lint" time="14.285341">
+      <testcase classname="fastlane.lanes" name="2: pod_lib_lint" time="11.143322">
         
       </testcase>
     
